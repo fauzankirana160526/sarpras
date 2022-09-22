@@ -38,36 +38,38 @@
 
     <!-- text Data siswa -->
     <div class="txt">
-        <h1>Data peminjaman</h1>
+        <div class="dt"><h1>Data pinjam</h1></div>
         <h2></h2>
-        <div class="btm1"><h4><a href="tambahuser.html">create data [+]</a></h4></div>
+        <div class="btm1"><h4><a href="tambahpinjam.html">create data [+]</a></h4></div>
 
         <!-- teble -->
     <div class="table1">
         <table border="0">
                     <tr>
                         <th>no</th>
-                        <th>nisn</th>
-                        <th>nama lengkap</th>
-                        <th>email</th>
-                        <th>status</th>
+                        <th>prasarana</th>
+                        <th>nama siswa</th>
+                        <th>tanggal pinjam</th>
+                        <th>status pinjam</th>
+                        <th>jumlah</th>
                         <th>aksi</th>
                     </tr>
                     <?php
-                        $sql = "SELECT * FROM sarpras";
+                        $sql = "SELECT * FROM siswa";
                         $query = mysqli_query($connect, $sql);
                         while($pel = mysqli_fetch_array($query)){
                             // var_dump($pel);
                             echo"
                         <tr>
                             <td>$pel[no]</td>
-                            <td>$pel[nisn]</td>
-                            <td>$pel[nama_lengkap]</td>
-                            <td>$pel[email]</td>
-                            <td>$pel[status]</td>
+                            <td>$pel[prasarana]</td>
+                            <td>$pel[nama_siswa]</td>
+                            <td>$pel[tanggal_pinjam]</td>
+                            <td>$pel[status_pinjam]</td>
+                            <td>$pel[jumlah]</td>
                             <td>
-                                <a href='edit.php?no=".$pel['no']."'>Edit</a>
-                                <a href='hapus.php?no=".$pel['no']."'>Hapus</a>
+                                <a href='editpinjam.php?no=".$pel['no']."'>Edit</a>
+                                <a href='hapuspinjam.php?no=".$pel['no']."'>Hapus</a>
                             </td>
                         </tr>";
                         }

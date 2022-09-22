@@ -4,14 +4,14 @@ include 'koneksi.php';
 if(isset($_GET['no'])){ 
     $no = $_GET['no']; 
  
-    $sql = "DELETE FROM sarpras WHERE no = '$no'";        
+    $sql = "DELETE FROM siswa WHERE no = '$no'";        
  
     $query = mysqli_query($connect, $sql);
  
     if($query){ 
-        header('Location: datauser.php'); 
+        header('Location: peminjaman.php'); 
     }else{ 
-        header('Location: hapus.php?status=gagal'); 
+        header('Location: hapuspinjam.php?status=gagal'); 
     } 
 } 
 ?>

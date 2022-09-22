@@ -142,29 +142,30 @@ table a {
     background-color: wheat;
 }
 
-.p12 {
-    text-align: center;
-    background-color: brown;
+.nbr10 h6 {
+    background-color: #1C2A3A;
     position: absolute;
-    color: white;
-    margin-top: 180px;
-    width: 500px;
-    margin-left: 370px;
-    padding: 80px;
+    padding-left: 10px;
+}
+
+.omv1 {
+    background-color: #1C2A3A;
     border-radius: 20px;
-    border: 1px solid black;
+    margin-bottom: 50px;
+    margin-top: 65px;
+    padding-left: 230px;
+    margin-left: 40px;
 }
 
-.p12 p {
-    margin-left: 0;
+.omv1 table {
+    margin-left: 5px;
+    margin-top: 150px;
 }
 
-.side123 {
-    position: absolute;
+.omv1 p {
+    color: #D9D9D9;
 }
 
-.side123 h2 {
-    border: 1px solid black;
-    width: 900%;
-    margin-left: 2000%;
+.omv1 h3{
+    color: #D9D9D9;
 }
