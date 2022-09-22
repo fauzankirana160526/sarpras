@@ -20,21 +20,41 @@
             <a href="datauser.php"><h5>Kelola data siswa</h5></a>
             <a href="peminjaman.php"><h4>Kelola peminjaman</h4></a>
         </div>
-
+       
         <div class="sbr">
+            <form action="simpanpinjam.php" method="post">
+                <h3>Tambhakan Data pinjam</h3>
+                <table>
+                    <tr>
+                        <td><p><label>no : </label></p></td>
+                        <td><input required="required" type="number" name="no"></label></p></td>
+                    </tr>
+                    <tr>
+                        <td><p><label>prasarana : </label></p></td>
+                        <td><input required="required" type="text" name="prasarana"></label></p></td>
+                    </tr>
+                    <tr>
+                        <td><p><label>nama siswa : </label></p></td>
+                        <td><input required="required" type="text" name="nama_siswa"></p></td>
+                    </tr>
+                    <tr>
+                        <td><p><label>tanggal pinjam : </label></p></td>
+                        <td><input required="required" type="text" name="tanggal_pinjam"></label></p></td>
+                    </tr>
+                    <tr>
+                        <td><p><label>status pinjam : </label></p></td>
+                        <td><input required="required" type="text" name="status_pinjam"></label></p></td>
+                    </tr>
+                    <tr>
+                        <td><p><label>jumlah : </label></p></td>
+                        <td><input required="required" type="number" name="jumlah"></label></p></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="simpan" value="simpan"></td>
+                    </tr>
+                </table>
+        </form>
         </div>
-    <form action="simpanpinjam.php" method="post">
-        <h3>Tambha Data pelanggan</h3>
-        <p><label>no : <input required="required" type="number" name="no"></label></p>
-        <p><label>prasarana : <input required="required" type="text" name="prasarana"></label></p>
-        <p><label>nama siswa : <input required="required" type="text" name="nama_siswa"></p>
-        <p><label>tanggal pinjam : <input required="required" type="number" name="tanggal_pinjam"></label></p>
-        <p><label>status pinjam : <input required="required" type="text" name="status_pinjam"></label></p>
-        <p><label>jumlah : <input required="required" type="number" name="jumlah"></label></p>
-        <input type="submit" name="simpan" value="simpan">
-    </form>
-    
-
     </div>
 </body>
 </html>

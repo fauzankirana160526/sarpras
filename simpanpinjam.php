@@ -14,7 +14,7 @@ if(isset($_POST['simpan'])){
     $query = mysqli_query($connect, $sql);
  
     if($query){ 
-        header('Location: datauser.php'); 
+        header('Location: peminjaman.php'); 
     }else{ 
         header('Location: simpanpinjam.php?status=gagal'); 
     } 

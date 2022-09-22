@@ -23,15 +23,53 @@ if(mysqli_num_rows ($query)< 1){
     </style>
 </head>
 <body>
-    <form action="updatepinjam.php" method="post">
-        <h3>Tambha Data pelanggan</h3>
-        <p><label>no : <input required="required" type="number" value="<?= $pel['no']?>" name="no"></label></p>
-        <p><label>prasarana : <input required="required" type="text" value="<?= $pel['prasarana']?>" name="prasarana"></label></p>
-        <p><label>nama siswa : <input required="required" type="text" value="<?= $pel['nama_siswa']?>" name="nama_siswa"></label></p>
-        <p><label>tanggal pinjam : <input required="required" type="text" value="<?= $pel['tanggal_pinjam']?>" name="tanggal_pinjam"></label></p>
-        <p><label>status pinjam : <input required="required" type="text" value="<?= $pel['status_pinjam']?>" name="status_pinjam"></label></p>
-        <p><label>jumlah : <input required="required" type="number" value="<?= $pel['jumlah']?>" name="jumlah"></label></p>
-        <input type="submit" name="simpan" value="simpan">
-    </form>
+    <!-- side bar -->
+    
+    <div class="cont">
+        <div class="icon-nbr">
+            <h5><iconify-icon icon="bxs:user"></iconify-icon></h5>
+            <h4><iconify-icon icon="el:key"></iconify-icon></h4>
+        </div>
+
+        <div class="icon-nbr1">
+            <a href="datauser.php"><h5>Kelola data siswa</h5></a>
+            <a href="peminjaman.php"><h4>Kelola peminjaman</h4></a>
+        </div>
+    <div class="sbr">
+        <form action="updatepinjam.php" method="post">
+            <h3>Edit</h3>
+        <table>
+              <tr>
+                <td><p><label>no : </label></p></td>
+                <td><input required="required" type="number" value="<?= $pel['no']?>" name="no"></label></p></td>
+            </tr>
+            <tr>
+                <td><p><label>prasarana : </label></p></td>
+                <td><input required="required" type="text" value="<?= $pel['prasarana']?>" name="prasarana"></label></p></td>
+            </tr>
+            <tr>
+                <td> <p><label>nama siswa : </label></p></td>
+                <td><input required="required" type="text" value="<?= $pel['nama_siswa']?>" name="nama_siswa"></label></p></td>
+            </tr>
+            <tr>
+                <td><p><label>tanggal pinjam : </label></p></td>
+                <td><input required="required" type="text" value="<?= $pel['tanggal_pinjam']?>" name="tanggal_pinjam"></label></p></td>
+            </tr>
+            <tr>
+                <td><p><label>status pinjam : </label></p></td>
+                <td><input required="required" type="text" value="<?= $pel['status_pinjam']?>" name="status_pinjam"></label></p></td>
+            </tr>
+            <tr>
+                <td><p><label>jumlah : </label></p></td>
+                <td><input required="required" type="number" value="<?= $pel['jumlah']?>" name="jumlah"></label></p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="simpan" value="simpan"></td>
+            </tr>  
+        </table>
+            
+        </form>
+    </div>
 </body>
 </html>

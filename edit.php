@@ -59,9 +59,11 @@ if(mysqli_num_rows ($query)< 1){
                     <td><p><label>status : </label></td>
                     <td><input required="required" type="text" value="<?= $pel['status']?>" name="status"></label></p></td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="simpan" value="simpan"></td>
+                </tr>
                 
-                
-                <td><input type="submit" name="simpan" value="simpan"></td>
             </table>
         </div>
     </form>
