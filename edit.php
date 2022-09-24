@@ -21,6 +21,8 @@ if(mysqli_num_rows ($query)< 1){
     <style>
         <?php include 'style.css'?>
     </style>
+    <!-- iconfity -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 </head>
 <body>
     <!-- side bar -->
